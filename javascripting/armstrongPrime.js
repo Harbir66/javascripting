@@ -11,9 +11,8 @@ function isPrime(number){
     }
     return true;
 }
-function isarmstrongPrime(number){
+function isArmstrong(number){
     let a=number;
-    if(! isPrime(number)) return false;
     let res=0;
     while(number>0){
         let temp=number %10;
@@ -24,6 +23,6 @@ function isarmstrongPrime(number){
     return (res===a)?true:false;
 }
 
-console.log(armstrongPrime(2));
+console.log(isArmstrong(153));
 
-// console.log(isPrime(6));
+console.log(isPrime(2));
