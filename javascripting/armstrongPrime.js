@@ -1,7 +1,6 @@
-// const { FlatESLint } = require("eslint/lib/eslint");
-
 // 153 = 1^3 + 5^3 + 3^3
-function isPrime(number){
+
+const isPrime = (n) =>{
     if(number <=1){
         return false;
     }
@@ -11,7 +10,7 @@ function isPrime(number){
     }
     return true;
 }
-function isArmstrong(number){
+const isArmstrong = (n) => {
     let a=number;
     let res=0;
     while(number>0){
