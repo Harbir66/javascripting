@@ -1,23 +1,23 @@
 // 153 = 1^3 + 5^3 + 3^3
 
 const isPrime = (n) =>{
-    if(number <=1){
+    if(n <=1){
         return false;
     }
-    for(let i=2;i<number;i++){
-        if(number % i ==0 ) 
+    for(let i=2;i<n;i++){
+        if(n % i ==0 ) 
             return false;
     }
     return true;
 }
 const isArmstrong = (n) => {
-    let a=number;
+    let a=n;
     let res=0;
-    while(number>0){
-        let temp=number %10;
+    while(n>0){
+        let temp=n %10;
         res += (temp*temp*temp);
-        number/=10;
-        number=Math.floor(number);
+        n/=10;
+        n=Math.floor(n);
     }
     return (res===a)?true:false;
 }
