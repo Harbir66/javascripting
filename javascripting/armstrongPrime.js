@@ -13,7 +13,7 @@ function isPrime(number){
 }
 function armstrongPrime(number){
     let a=number;
-    // if(! isPrime(number)) return false;
+    if(! isPrime(number)) return false;
     let res=0;
     while(number>0){
         let temp=number %10;
